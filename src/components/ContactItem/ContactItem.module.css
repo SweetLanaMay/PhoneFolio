@@ -1,0 +1,25 @@
+
+.contactWrap {
+    display: flex;
+    width: 400px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contactItem {
+    width: 350px;
+}
+
+.deleteBtn {
+    display: block;
+    width: 60px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-shadow: 2px 4px 6px  #c0bfc1;
+}
+
+.deleteBtn:hover,
+.deleteBtn:focus {
+    border: 3px solid #3f92e5;
+}
