@@ -1,16 +1,16 @@
 const styles = {
   container: {
-    backgroundColor: 'rgb(246, 230, 152)',
-
+    
     minHeight: 'calc(100vh - 50px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
-    fontWeight: 500,
-    fontSize: 48,
+    fontWeight: 700,
+    fontSize: 80,
     textAlign: 'center',
+    color: '#f6e698'
   },
 };
 
@@ -18,10 +18,7 @@ export default function Home() {
   return (
     <div style={styles.container}>
       <h1 style={styles.title}>
-        Wellcome to Phonebook{' '}
-        <span role="img" aria-label="Greeting icon">
-          💁‍♀️
-        </span>
+        Wellcome to <br/> Phonebook
       </h1>
     </div>
   );

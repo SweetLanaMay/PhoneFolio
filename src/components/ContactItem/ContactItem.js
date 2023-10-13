@@ -12,7 +12,7 @@ const ContactItem = ({ contact }) => {
   return (
     <div className={css.contactWrap}>
       <p className={css.contactsItem}>
-        {contact.name}: {contact.phone}
+        {contact.name}: {contact.number}
       </p>
       <button className={css.deleteBtn} onClick={handleDeleteContact}>
         Delete

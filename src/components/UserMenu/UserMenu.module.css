@@ -8,3 +8,21 @@
     font-weight: 700;
   }
   
+  .logoutBtn {
+    display: block;
+    width: 60px;
+    height: 20px;
+    font-weight: 500;
+    background-color: #c8c3c2;
+    border: 1px solid #737070;
+    border-radius: 4px;
+    box-shadow: 2px 4px 6px #737070;
+    cursor: pointer;
+  }
+
+  .logoutBtn:hover,
+  .logoutBtn:focus {
+    border: 2px solid red;
+    background-color: #ed705d;
+    color: #ffffff;
+}

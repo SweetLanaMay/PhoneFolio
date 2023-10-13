@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getContacts } from 'redux/contacts/selectors';
 import { getFilter } from 'redux/contacts/selectors'
 import { setFilter } from 'redux/contacts/rootReducer';
-import ContactList from 'components/ContactList';
 import css from './Filter.module.css';
 
 const Filter = () => {
@@ -20,7 +19,7 @@ const Filter = () => {
   );
   console.log(filteredContacts);
   return (
-    <>
+    <div className={css.filter}>
       <label className={css.filterLabel}>
         Find contacts by name
         <input
@@ -31,8 +30,7 @@ const Filter = () => {
           className={css.filterInput}
         />
       </label>
-      <ContactList  />
-    </>
+    </div>
   );
 };
 

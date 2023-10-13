@@ -9,14 +9,14 @@ const PhoneBook = () => {
   const contacts = useSelector(getContacts);
 
   const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
+  const [number, setNumber] = useState('');
 
   const handleNameChange = event => {
     setName(event.target.value);
   };
 
   const handleNumberChange = event => {
-    setPhone(event.target.value);
+    setNumber(event.target.value);
   };
 
   const handleFormSubmit = event => {
@@ -33,12 +33,12 @@ const PhoneBook = () => {
     } else {
       const newContact = {
         name,
-        phone,
+        number,
       };
 
       dispatch(addContact(newContact));
       setName('');
-      setPhone('');
+      setNumber('');
     }
   };
 
@@ -58,13 +58,13 @@ const PhoneBook = () => {
         />
       </label>
       <label className={css.formName}>
-        Phone
+        Number
         <input
-          value={phone}
+          value={number}
           onChange={handleNumberChange}
           className={css.formInput}
           type="tel"
-          name="phone"
+          name="number"
           pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
